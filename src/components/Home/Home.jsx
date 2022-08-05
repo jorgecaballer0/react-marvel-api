@@ -1,17 +1,14 @@
 import React from "react";
+import Cards from "../Cards/Cards";
 
 const Home = () => {
   return (
-    <div>
-      <h1>MARVEL</h1>
-      <h4>
-        Este proyecto utiliza la API de Marvel para obtener información de los
-        personajes, comics, series y eventos.
-      </h4>
-      <h5>
-        Sitio oficial: <a href="https://www.marvel.com/">MARVEL</a>
-      </h5>
-    </div>
+    <>
+      <div>
+        <h3>Seleccione una categoría para continuar</h3>
+      </div>
+      <Cards />
+    </>
   );
 };
 
