@@ -1,4 +1,4 @@
-### Marvel API
+# Marvel API
 
 ## Preview
 
