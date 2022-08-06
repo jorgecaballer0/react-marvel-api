@@ -17,8 +17,6 @@ const CharacterList = () => {
     getDataCharacters();
   }, []);
 
-  console.log(heroes);
-
   return (
     <>
       {isLoading ? (
@@ -26,7 +24,12 @@ const CharacterList = () => {
           Cargando...
         </div>
       ) : (
-        <Character heroes={heroes} />
+        <>
+          <h1 className="text-center text-white text-6xl my-3 underline">
+            <span className="text-red-400 text-7xl">P</span>ersonajes
+          </h1>
+          <Character heroes={heroes} />
+        </>
       )}
     </>
   );
