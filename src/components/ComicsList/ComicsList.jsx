@@ -17,10 +17,21 @@ const ComicsList = () => {
     getDataComics();
   }, []);
 
-  console.log(comics);
-
   return (
-    <div>{isLoading ? <div>Cargando...</div> : <Comic comics={comics} />}</div>
+    <>
+      {isLoading ? (
+        <div className="min-h-screen text-4xl text-center text-white flex items-center justify-center">
+          Cargando...
+        </div>
+      ) : (
+        <>
+        <h1 className="text-center text-white text-6xl my-3 underline">
+            <span className="text-red-400 text-7xl">C</span>omics
+          </h1>
+        <Comic comics={comics} />
+        </>
+      )}
+    </>
   );
 };
 

@@ -17,10 +17,21 @@ const EventList = () => {
     getDataEvents();
   }, []);
 
-  console.log(event);
-
   return (
-    <div>{isLoading ? <div>Cargando...</div> : <Event event={event} />}</div>
+    <div>
+      {isLoading ? (
+        <div className="min-h-screen text-4xl text-center text-white flex items-center justify-center">
+          Cargando...
+        </div>
+      ) : (
+        <>
+          <h1 className="text-center text-white text-6xl my-3 underline">
+            <span className="text-red-400 text-7xl">E</span>ventos
+          </h1>
+          <Event event={event} />
+        </>
+      )}
+    </div>
   );
 };
 
