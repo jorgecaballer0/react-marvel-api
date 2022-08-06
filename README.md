@@ -2,7 +2,7 @@
 
 ## Preview
 
-![preview](../react-api-marvel/src/assets/img/preview.jpg)
+![preview](./src/assets/img//preview.jpg)
 
 ## Descripción del proyecto
 
