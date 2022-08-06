@@ -5,7 +5,7 @@ import Logo from "../../assets/img/marvel-logo.jpg";
 const Nav = () => {
   return (
     <>
-      <nav className="bg-marvelRed flex justify-between p-1 ">
+      <nav className="bg-marvelRed flex justify-between py-1 px-4 ">
         <Link to="/">
           <img className="w-36" src={Logo} alt="Logo" />
         </Link>
@@ -21,7 +21,7 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
-      <div className="bg-bgSecondary text-white text-sm text-center py-1">
+      <div className="bg-bgSecondary text-white text-sm text-center py-1 border-y">
         <p className="mb-1">
           Este proyecto utiliza la API de Marvel para obtener informacion de los
           personajes, comics y eventos

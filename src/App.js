@@ -15,7 +15,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/personajes" element={<CharacterList />} />
+          <Route path="/personajes" element={<CharacterList/>}/>
           <Route path="/comics" element={<ComicsList />} />
           <Route path="/eventos" element={<EventsList />} />
           <Route path="/*" element={<Page404 />} />

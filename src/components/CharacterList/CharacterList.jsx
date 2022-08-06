@@ -20,7 +20,15 @@ const CharacterList = () => {
   console.log(heroes);
 
   return (
-    <>{isLoading ? <div>Cargando...</div> : <Character heroes={heroes} />}</>
+    <>
+      {isLoading ? (
+        <div className="min-h-screen text-4xl text-center text-white flex items-center justify-center">
+          Cargando...
+        </div>
+      ) : (
+        <Character heroes={heroes} />
+      )}
+    </>
   );
 };
 
